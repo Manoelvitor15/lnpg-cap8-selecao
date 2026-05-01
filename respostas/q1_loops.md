@@ -21,10 +21,9 @@ HASKELL
 
 let kInitial = (j + 13) `div` 27
 
--- Função recursiva que simula o loop
 let loop k = 
       if k > 10 
-      then (k, i) -- Retorna o estado final (exemplo)
+      then (k, i)
       else let nextK = k + 1
                nextI = 3 * nextK - 1
            in loop nextK
